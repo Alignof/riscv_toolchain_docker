@@ -12,4 +12,3 @@ RUN git clone https://github.com/riscv-software-src/riscv-pk.git \
     && ../configure --prefix=/opt/riscv --host=riscv64-unknown-elf --with-arch=rv64gc_zifencei \
     && make && make install 
 RUN cp /opt/riscv/riscv64-unknown-elf/bin/pk /opt/riscv/bin
-RUN ln -s /opt/riscv/share/riscv-tests /opt/riscv/riscv-tests
